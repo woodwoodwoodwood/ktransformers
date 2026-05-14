@@ -6,7 +6,7 @@ export SGLANG_DSV4_2604_SUBMODE=2604B
 
 numactl --interleave=all python -m sglang.launch_server \
   --host 0.0.0.0 --port 30000 \
-  --model /path/to/models/DeepSeek-V4-Flash \
+  --model /data1/models/DeepSeek-V4-Flash \
   --kt-weight-path /data1/models/DeepSeek-V4-Flash \
   --kt-method MXFP4 \
   --kt-num-gpu-experts 30 \
