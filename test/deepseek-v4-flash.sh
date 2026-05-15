@@ -24,7 +24,6 @@ numactl --interleave=all python -m sglang.launch_server \
   --watchdog-timeout 1200 \
   --disable-shared-experts-fusion \
   --trust-remote-code \
-  --cuda-graph-bs 1 \
-  --cuda-graph-max-bs 1 \
+  --disable-cuda-graph \
   --disable-radix-cache \
   --skip-server-warmup
